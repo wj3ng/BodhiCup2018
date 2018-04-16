@@ -8,7 +8,7 @@ Licence URI: http://www.os-templates.com/template-terms
 -->
 <html lang="">
 <head>
-<title>選擇比賽 - 報名 - 2018電競菩提盃</title>
+<title>個人資料 - 報名 - 2018電競菩提盃</title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 <link href="../layout/styles/layout.css" rel="stylesheet" type="text/css" media="all">
@@ -47,7 +47,7 @@ Licence URI: http://www.os-templates.com/template-terms
                 <li><a href="#">賽程表</a></li>
             </ul>
           </li>
-          <li><a class="drop" href="#">比賽規則</a>
+          <li><a class="drop" href="rules.html">比賽規則</a>
             <ul>
               <li><a href="rules_general.html">主要規則</a></li>
               <li><a href="rules_LoL.html">英雄聯盟錦標賽</a></li>
@@ -55,7 +55,7 @@ Licence URI: http://www.os-templates.com/template-terms
               <li><a href="rules_FAQ.html">F.A.Q.</a></li>
             </ul>
           </li>
-          <li class="active"><a href="register.html">我要報名</a></li>
+          <li class="active"><a href="#">我要報名</a></li>
         </ul>
       </nav>
       <!-- ################################################################################################ -->
@@ -70,7 +70,9 @@ Licence URI: http://www.os-templates.com/template-terms
     <!-- ################################################################################################ -->
     <ul>
       <li><a href="../index.html">首頁</a></li>
-      <li><a href="rules.html">選擇比賽</a></li>
+      <li><a href="register.html">英雄聯盟錦標賽</a></li>
+      <li><a href="register_LoL.html">團隊報名</a></li>
+      <li><a href="#">報名資料</a></li>
     </ul>
     <!-- ################################################################################################ -->
   </section>
@@ -84,20 +86,168 @@ Licence URI: http://www.os-templates.com/template-terms
   <main class="hoc container clear">
     <!-- main body -->
     <!-- ################################################################################################ -->
-    <div class="content">
-      <!-- ################################################################################################ -->
-      <div id="gallery">
-        <figure>
-          <header class="heading">選擇要報名的比賽:</header>
-          <ul class="nospace clear">
-            <li class="one_half first"><a href="register_LoL.html"><img src="../images/icons/LoL_temp.jpg" alt=""></a></li>
-            <li class="one_half"><a href="register_MC.html"><img src="../images/icons/MC_temp.jpg" alt=""></a></li>
-          </ul>
-        </figure>
-      </div>
-      <!-- ################################################################################################ -->
-      <!-- ################################################################################################ -->
-      <!-- ################################################################################################ -->
+    <div class="content" method="post">
+      <form action="../scripts/submit_LoL_team.js">
+        <h1>團隊資料</h1>
+        隊名:<br>
+        <input type="text" name="teamname">
+        聯絡電子郵件:<br>
+        <input type="email" name="email">
+        <br>
+        <h1>個人資料</h1>
+        <div class="samelineform" name="player1">
+          隊員1 
+          <input type="text" name="name" placeholder="選手姓名">
+          <input type="text" name="class" placeholder="班級座號">
+          <input type="text" name="ign" placeholder="召喚者名稱">
+          <select name="pos1">
+            <option value="none">position 1</option>
+            <option value="top">上路</option>
+            <option value="mid">中路</option>
+            <option value="sup">Support</option>
+            <option value="adc">ADC</option>
+            <option value="jungle">打野</option>
+          </select>
+          <select name="pos2">
+            <option value="none">position 2<option>
+            <option value="top">上路</option>
+            <option value="mid">中路</option>
+            <option value="sup">Support</option>
+            <option value="adc">ADC</option>
+            <option value="jungle">打野</option>
+          </select>
+          <select name="pos3">
+            <option value="none">position 3<option>
+            <option value="top">上路</option>
+            <option value="mid">中路</option>
+            <option value="sup">Support</option>
+            <option value="adc">ADC</option>
+            <option value="jungle">打野</option>
+          </select>
+        </div>
+        <div class="samelineform" name="player2">
+          隊員2 
+          <input type="text" name="name" placeholder="選手姓名">
+          <input type="text" name="class" placeholder="班級座號">
+          <input type="text" name="ign" placeholder="召喚者名稱">
+          <select name="pos1">
+            <option value="none">position 1</option>
+            <option value="top">上路</option>
+            <option value="mid">中路</option>
+            <option value="sup">Support</option>
+            <option value="adc">ADC</option>
+            <option value="jungle">打野</option>
+          </select>
+          <select name="pos2">
+            <option value="none">position 2<option>
+            <option value="top">上路</option>
+            <option value="mid">中路</option>
+            <option value="sup">Support</option>
+            <option value="adc">ADC</option>
+            <option value="jungle">打野</option>
+          </select>
+          <select name="pos3">
+            <option value="none">position 3<option>
+            <option value="top">上路</option>
+            <option value="mid">中路</option>
+            <option value="sup">Support</option>
+            <option value="adc">ADC</option>
+            <option value="jungle">打野</option>
+          </select>
+        </div>
+        <div class="samelineform" name="player3">
+          隊員3 
+          <input type="text" name="name" placeholder="選手姓名">
+          <input type="text" name="class" placeholder="班級座號">
+          <input type="text" name="ign" placeholder="召喚者名稱">
+          <select name="pos1">
+            <option value="none">position 1</option>
+            <option value="top">上路</option>
+            <option value="mid">中路</option>
+            <option value="sup">Support</option>
+            <option value="adc">ADC</option>
+            <option value="jungle">打野</option>
+          </select>
+          <select name="pos2">
+            <option value="none">position 2<option>
+            <option value="top">上路</option>
+            <option value="mid">中路</option>
+            <option value="sup">Support</option>
+            <option value="adc">ADC</option>
+            <option value="jungle">打野</option>
+          </select>
+          <select name="pos3">
+            <option value="none">position 3<option>
+            <option value="top">上路</option>
+            <option value="mid">中路</option>
+            <option value="sup">Support</option>
+            <option value="adc">ADC</option>
+            <option value="jungle">打野</option>
+          </select>
+        </div>
+        <div class="samelineform" name="player4">
+          隊員4 
+          <input type="text" name="name" placeholder="選手姓名">
+          <input type="text" name="class" placeholder="班級座號">
+          <input type="text" name="ign" placeholder="召喚者名稱">
+          <select name="pos1">
+            <option value="none">position 1</option>
+            <option value="top">上路</option>
+            <option value="mid">中路</option>
+            <option value="sup">Support</option>
+            <option value="adc">ADC</option>
+            <option value="jungle">打野</option>
+          </select>
+          <select name="pos2">
+            <option value="none">position 2<option>
+            <option value="top">上路</option>
+            <option value="mid">中路</option>
+            <option value="sup">Support</option>
+            <option value="adc">ADC</option>
+            <option value="jungle">打野</option>
+          </select>
+          <select name="pos3">
+            <option value="none">position 3<option>
+            <option value="top">上路</option>
+            <option value="mid">中路</option>
+            <option value="sup">Support</option>
+            <option value="adc">ADC</option>
+            <option value="jungle">打野</option>
+          </select>
+        </div>
+        <div class="samelineform" name="player5">
+          隊員5 
+          <input type="text" name="name" placeholder="選手姓名">
+          <input type="text" name="class" placeholder="班級座號">
+          <input type="text" name="ign" placeholder="召喚者名稱">
+          <select name="pos1">
+            <option value="none">position 1</option>
+            <option value="top">上路</option>
+            <option value="mid">中路</option>
+            <option value="sup">Support</option>
+            <option value="adc">ADC</option>
+            <option value="jungle">打野</option>
+          </select>
+          <select name="pos2">
+            <option value="none">position 2<option>
+            <option value="top">上路</option>
+            <option value="mid">中路</option>
+            <option value="sup">Support</option>
+            <option value="adc">ADC</option>
+            <option value="jungle">打野</option>
+          </select>
+          <select name="pos3">
+            <option value="none">position 3<option>
+            <option value="top">上路</option>
+            <option value="mid">中路</option>
+            <option value="sup">Support</option>
+            <option value="adc">ADC</option>
+            <option value="jungle">打野</option>
+          </select>
+        </div>
+        <br>
+        <input type="submit" class="registerbutton" value="送出">
+      </form>
     </div>
     <!-- ################################################################################################ -->
     <!-- / main body -->

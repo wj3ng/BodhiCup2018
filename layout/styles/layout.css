@@ -230,6 +230,17 @@ table{width:100%; margin-bottom:15px;}
 th, td{padding:5px 8px;}
 td{border-width:0 1px;}
 
+/* textboxes on same line
+-----------------------------------------------------------*/
+.samelineform {
+	display: flex;
+	flex-direction: row;
+}
+
+label, input {
+	display: block
+}
+
 
 /* Gallery
 --------------------------------------------------------------------------------------------------------------- */
