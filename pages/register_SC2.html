@@ -8,7 +8,14 @@ Licence URI: http://www.os-templates.com/template-terms
 -->
 <html lang="">
 <head>
-<title>選擇比賽 - 報名 - 2018電競菩提盃</title>
+
+
+<script src="https://www.gstatic.com/firebasejs/4.12.1/firebase.js"></script>
+<script src="https://www.gstatic.com/firebasejs/4.12.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/4.12.1/firebase-database.js"></script>
+<script src="../scripts/submit_mc.js"></script>
+
+<title>星海爭霸II錦標賽 報名表 - 2018電競菩提盃</title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 <link href="../layout/styles/layout.css" rel="stylesheet" type="text/css" media="all">
@@ -54,7 +61,7 @@ Licence URI: http://www.os-templates.com/template-terms
             <li><a href="rules_SC2.html">星海爭霸II錦標賽</a></li>
           </ul>
         </li>
-        <li class="active"><a href="#">我要報名</a></li>
+        <li class="active"><a href="register.html">我要報名</a></li>
       </ul>
     </nav>
   </header>
@@ -64,12 +71,12 @@ Licence URI: http://www.os-templates.com/template-terms
   <!-- ################################################################################################ -->
   <section id="breadcrumb" class="hoc clear">
     <!-- ################################################################################################ -->
-    <h6 class="heading">報名</h6>
+    <h6 class="heading">星海爭霸II錦標賽</h6>
     <!-- ################################################################################################ -->
     <ul>
       <li><a href="../index.html">首頁</a></li>
       <li><a href="register.html">選擇比賽</a></li>
-      <li><a href="#">英雄聯盟錦標賽</a></li>
+      <li><a href="#">星海爭霸II錦標賽</a></li>
     </ul>
     <!-- ################################################################################################ -->
   </section>
@@ -84,20 +91,32 @@ Licence URI: http://www.os-templates.com/template-terms
     <!-- main body -->
     <!-- ################################################################################################ -->
     <div class="content">
-      <!-- ################################################################################################ -->
-      <div id="gallery">
-        <figure>
-          <header class="heading">選擇參賽方法:</header>
-          <ul class="nospace clear">
-            <li class="one_third first"><a href="register_LoL_solo.html"><img src="../images/icons/LoL_temp.jpg" alt=""></a></li>
-            <li class="one_third"><a href="register_LoL_squad.html"><img src="../images/icons/LoL_temp.jpg" alt=""></a></li>
-            <li class="one_third"><a href="register_LoL_team.html"><img src="../images/icons/LoL_temp.jpg" alt=""></a></li>
-          </ul>
-        </figure>
-      </div>
-      <!-- ################################################################################################ -->
-      <!-- ################################################################################################ -->
-      <!-- ################################################################################################ -->
+      <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfK3-XFtwHvhKTZ9_i-Xo6bK5sjSTLAsjYaJ294JUf0co7KUA/viewform?embedded=true" width="760" height="1900" frameborder="0" marginheight="0" marginwidth="0">報名表載入中...</iframe>
+
+      <!--
+      <form onsubmit="register_minecraft()">
+        <div id="name_div">
+            選手姓名:<br>
+            <input type="text" name="name" id="name">
+        </div>
+        <div id="class_seat_div">
+            班級座號:<br>
+            <input type="text" name="class_seat" id="class_seat">
+        </div>
+        <div id="usr_email_div">
+            電字郵件:<br>
+            <input type="email" name="usr_email" id="usr_email">
+        </div>
+        <div id="gid_div">
+            Minecraft帳號:<br>
+            <input type="text" name="gid" id="gid">
+        </div>
+        <br>
+        <div id="submit_div">
+            <input type="submit" class="registerbutton" value="送出" />
+        </div>
+      </form>
+  -->
     </div>
     <!-- ################################################################################################ -->
     <!-- / main body -->
@@ -114,10 +133,9 @@ Licence URI: http://www.os-templates.com/template-terms
     <!-- ################################################################################################ -->
   </div>
 </div>
-
 <!-- ################################################################################################ -->
 <!-- ################################################################################################ -->
-<!-- ############################################################################################# -->
+<!-- ################################################################################################ -->
 <a id="backtotop" href="#top"><i class="fa fa-chevron-up"></i></a>
 <!-- JAVASCRIPTS -->
 <script src="../layout/scripts/jquery.min.js"></script>
