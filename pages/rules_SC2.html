@@ -8,14 +8,7 @@ Licence URI: http://www.os-templates.com/template-terms
 -->
 <html lang="">
 <head>
-
-
-<script src="https://www.gstatic.com/firebasejs/4.12.1/firebase.js"></script>
-<script src="https://www.gstatic.com/firebasejs/4.12.1/firebase-app.js"></script>
-<script src="https://www.gstatic.com/firebasejs/4.12.1/firebase-database.js"></script>
-<script src="../scripts/submit_mc.js"></script>
-
-<title>英雄聯盟錦標賽 小隊報名表 - 2018電競菩提盃</title>
+<title>星海爭霸II錦標賽 - 比賽規則 - 2018電競菩提盃</title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 <link href="../layout/styles/layout.css" rel="stylesheet" type="text/css" media="all">
@@ -54,15 +47,16 @@ Licence URI: http://www.os-templates.com/template-terms
                 <li><a href="#">賽程表</a></li>
             </ul>
           </li>
-          <li><a class="drop" href="rules.html">比賽規則</a>
+          <li class="active"><a class="drop" href="rules.html">比賽規則</a>
             <ul>
               <li><a href="rules_general.html">主要規則</a></li>
               <li><a href="rules_LoL.html">英雄聯盟錦標賽</a></li>
               <li><a href="rules_MC.html">Minecraft UHC 錦標賽</a></li>
+              <li class="active"><a href="#">星海爭霸II錦標賽</a></li>
               <li><a href="rules_FAQ.html">F.A.Q.</a></li>
             </ul>
           </li>
-          <li class="active"><a href="#">我要報名</a></li>
+          <li><a href="register.html">我要報名</a></li>
         </ul>
       </nav>
       <!-- ################################################################################################ -->
@@ -73,13 +67,12 @@ Licence URI: http://www.os-templates.com/template-terms
   <!-- ################################################################################################ -->
   <section id="breadcrumb" class="hoc clear">
     <!-- ################################################################################################ -->
-    <h6 class="heading">英雄聯盟錦標賽 團隊報名表</h6>
+    <h6 class="heading">星海爭霸II錦標賽 比賽規則</h6>
     <!-- ################################################################################################ -->
     <ul>
       <li><a href="../index.html">首頁</a></li>
-      <li><a href="register.html">選擇比賽</a></li>
-      <li><a href="register_LoL.html">英雄聯盟錦標賽</a></li>
-      <li><a href="#">小隊報名</a></li>
+      <li><a href="rules.html">比賽規則</a></li>
+      <li><a href="#">星海爭霸II錦標賽</a></li>
     </ul>
     <!-- ################################################################################################ -->
   </section>
@@ -93,11 +86,107 @@ Licence URI: http://www.os-templates.com/template-terms
   <main class="hoc container clear">
     <!-- main body -->
     <!-- ################################################################################################ -->
-    <div class="content">
-      <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSe47HEQpku6HPXaZ6Q5q5rCU86f135d-3vtOn48C3CpwAt3Qg/viewform?embedded=true" width="760" height="1400" frameborder="0" marginheight="0" marginwidth="0">報名表載入中...</iframe>
-
+    <div class="sidebar one_quarter first">
+      <!-- ################################################################################################ -->
+      <h6>目錄</h6>
+      <nav class="sdb_holder">
+        <ul>
+          <li><a href="#Qualification">參賽資格</a></li>
+          <li><a href="#Schedule">比賽時程</a></li>
+          <li><a href="#Rules">比賽方法</a>
+            <ul>
+              <li><a href="#Rules_Format">比賽形式</a></li>
+              <li><a href="#Rules_Substitution">選手替補</a></li>
+              <li><a href="#Rules_Forfeiting">投降/棄權</a></li>
+              <li><a href="#Rules_Disqualification">取消參賽資格</a></li>
+              <li><a href="#Rules_Other">其他狀況</a></li>
+            </ul>
+          </li>
+          <li><a href="#Prizes">獎項說明</a></li>
+          <li><a href="#Registration">報名方式</a></li>
+        </ul>
+      </nav>
+<!--
+      <div class="sdb_holder">
+        <h6>Lorem ipsum dolor</h6>
+        <address>
+        Full Name<br>
+        Address Line 1<br>
+        Address Line 2<br>
+        Town/City<br>
+        Postcode/Zip<br>
+        <br>
+        Tel: xxxx xxxx xxxxxx<br>
+        Email: <a href="#">contact@domain.com</a>
+        </address>
+      </div>
+-->
+<!--
+      <div class="sdb_holder">
+        <article>
+          <h6>Lorem ipsum dolor</h6>
+          <p>Nuncsed sed conseque a at quismodo tris mauristibus sed habiturpiscinia sed.</p>
+          <ul>
+            <li><a href="#">Lorem ipsum dolor sit</a></li>
+            <li>Etiam vel sapien et</li>
+            <li><a href="#">Etiam vel sapien et</a></li>
+          </ul>
+          <p>Nuncsed sed conseque a at quismodo tris mauristibus sed habiturpiscinia sed. Condimentumsantincidunt dui mattis magna intesque purus orci augue lor nibh.</p>
+          <p class="more"><a href="#">Continue Reading &raquo;</a></p>
+        </article>
+      </div>
+  -->
+      <!-- ################################################################################################ -->
     </div>
     <!-- ################################################################################################ -->
+    <!-- ################################################################################################ -->
+    <div class="content three_quarter">
+        <h1 id="Qualification">參賽資格</h1>
+          <ul><li><p>擁有《星海爭霸II》帳號的板橋高中在校生皆可參加。</p></li></ul>
+        <h1 id="Schedule">比賽時程</h1>
+        <h1 id="Rules">比賽方法</h1>
+          <ul>
+            <li id="Rules_Format"><p>比賽形式</p>
+              <ul>
+                <li><p>單敗淘汰制，每場比賽皆為BO3(三戰兩勝制),決賽為BO5(五戰三勝制).</p></li>
+                <li><p>準決賽敗者需要另外再進行一次BO3來決定季軍。</p></li>
+                <li><p>遊戲版本為最新的虛空之遺版本.</p></li>
+                <li><p>使用當季天梯的1v1地圖,準決賽與決賽需使用WCS GameHeart模組.</p></li>
+              </ul>
+            </li>
+            <li id="Rules_Rules"><p>比賽規則</p>
+              <ul>
+                <li><p>不得代打，違者取消比賽資格。</p></li>
+                <li><p>不得使用不當程式，違者取消比賽資格。</p></li>
+                <li><p>比賽開始前3分鐘選手必須到場，違者判該場次棄權。</p></li>
+                <li><p>比賽進行之伺服器為亞洲伺服器。</p></li>
+                <li><p>報到平台：遊戲聊天頻道PCSC(於聊天中輸入/join PCSC即可加入頻道)。</p></li>
+                <li><p>每場遊戲結束後有5分鐘之休息時間(經過雙方選手同意後可提早開始比賽)。</p></li>
+                <li><p>使用種族必須為報名時填寫的種族，不可更改。</p></li>
+                <li><p>比賽前抽籤決定哪一位選手選圖，遊戲敗方可選該場次未選過之地圖。</p></li>
+                <li><p>比賽進行時，雙方選手不得做出不當發言與行為，違者取消比賽資格。</p></li>
+                <li><p>比賽進行時，雙方選手不得做出有違運動精神之行為，違者取消比賽資格。</p></li>
+                <li><p>比賽進行時，選手必須將狀態調為「忙碌」。</p></li>
+                <li><p>比賽結束後1小時內選手須截圖並告知主辦單位比分(以FB告知粉專)，</p></li>
+                <li><p>未通知將會重新進行該場比賽。</p></li>
+                <li><p>季軍賽及決賽需進行線下賽。</p></li>
+                <li><p>線下賽選手必須於比賽開始前10分鐘到場，違者判該場次棄權。</p></li>
+                <li><p>線下賽比賽進行時選手不得使用智慧型3C產品(EX:智慧型手機等)，違者判該場比賽棄權。</p></li>
+                <li><p>線下賽選手可以自備周邊配備(滑鼠、鍵盤等)，且必須自備耳機。</p></li>
+              </ul>
+            </li>
+            <li id="Rules_Other"><p>其他狀況</p>
+              <ul>
+                <li><p>有關比賽之爭議,需在比賽結束後1天內告知主辦單位,否則不予受理. </p></li>
+                <li><p>爭議經主辦單位裁決後,選手不得有異議.</p></li>
+                <li><p>主辦單位擁有最終解釋權,並且可修改或補充此規章.</p></li>
+              </ul>
+            </li>
+          </ul>
+
+        <h1 id="Prizes">獎項說明</h1>
+        <h1 id="Registration">報名方式</h1>
+    </div>
     <!-- / main body -->
     <div class="clear"></div>
   </main>
