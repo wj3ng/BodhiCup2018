@@ -8,7 +8,14 @@ Licence URI: http://www.os-templates.com/template-terms
 -->
 <html lang="">
 <head>
-<title>個人資料 - 報名 - 2018電競菩提盃</title>
+
+
+<script src="https://www.gstatic.com/firebasejs/4.12.1/firebase.js"></script>
+<script src="https://www.gstatic.com/firebasejs/4.12.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/4.12.1/firebase-database.js"></script>
+<script src="../scripts/submit_mc.js"></script>
+
+<title>英雄聯盟錦標賽 小隊報名表 - 2018電競菩提盃</title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 <link href="../layout/styles/layout.css" rel="stylesheet" type="text/css" media="all">
@@ -66,12 +73,13 @@ Licence URI: http://www.os-templates.com/template-terms
   <!-- ################################################################################################ -->
   <section id="breadcrumb" class="hoc clear">
     <!-- ################################################################################################ -->
-    <h6 class="heading">報名</h6>
+    <h6 class="heading">英雄聯盟錦標賽 團隊報名表</h6>
     <!-- ################################################################################################ -->
     <ul>
       <li><a href="../index.html">首頁</a></li>
-      <li><a href="register.html">Minecraft UHC 錦標賽</a></li>
-      <li><a href="#">個人資料</a></li>
+      <li><a href="register.html">選擇比賽</a></li>
+      <li><a href="register_LoL.html">英雄聯盟錦標賽</a></li>
+      <li><a href="#">小隊報名</a></li>
     </ul>
     <!-- ################################################################################################ -->
   </section>
@@ -85,20 +93,9 @@ Licence URI: http://www.os-templates.com/template-terms
   <main class="hoc container clear">
     <!-- main body -->
     <!-- ################################################################################################ -->
-    <div class="content" method="post">
-      <h1>個人資料</h1>
-      <form action="../scripts/submit_mc.js">
-        選手姓名:<br>
-        <input type="text" name="name">
-        班級座號:<br>
-        <input type="text" name="class">
-        電字郵件:<br>
-        <input type="email" name="email">
-        Minecraft帳號:<br>
-        <input type="text" name="ign">
-        <br>
-        <input type="submit" class="registerbutton" value="送出" />
-      </form>
+    <div class="content">
+      <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSe47HEQpku6HPXaZ6Q5q5rCU86f135d-3vtOn48C3CpwAt3Qg/viewform?embedded=true" width="760" height="1400" frameborder="0" marginheight="0" marginwidth="0">報名表載入中...</iframe>
+
     </div>
     <!-- ################################################################################################ -->
     <!-- / main body -->
